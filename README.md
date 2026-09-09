@@ -16,7 +16,7 @@ int max_iter = (1<<16);
 // runner
 auto res = plotCentered(p.first, p.second, R, R, inc, max_iter);
 auto values = histo_values(res, max_iter, BANDS);
-cout << "[" << BANDS << "," << values.size() << "," << values[0].size() << "]" << endl; // Yes this is needed -- it specifies the dimensions of the image.
+cout << "[" << BANDS << "," << values.size() << "," << values[0].size() << "]" << endl; // Yes this is needed -- it specifies the dimensions of the image and the number of colors to use.
 cout << output_histo(values);
 ```
 
